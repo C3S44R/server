@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <h1 class="title">Proyecto</h1>
+    </div>
+    <div class="header-right">
+      <a href="about.html" class="button"><strong>Sobre nosotros</strong></a>
+    </div>
+  </header>
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="ww/ww1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Regístrese en AmazonAWS</h5>
+          <p>¡Abrir una cuenta es fácil! Solo siga los pasos del instructivo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="ww/ww2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Cree una instancia</h5>
+          <p>Comience a disfrutar de los beneficios que ofrece AmazonAWS.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="ww/ww3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Despliegue su sitio web</h5>
+          <p>Demuestra tu presencia en línea.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="content">
+
+    <br>
+
+    <h2 class="subtitle1">Despliegue de una instancia con Amazon Web Service para un sitio web con Node JS.</h2>
+    <h2 class="subtitle"><strong>Instructivo: </strong></h2>
+
+    <br>
+    
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <strong>Parte 1: Abriendo una cuenta en AmazonAWS</strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ol class="list-group list-group-flush">
+
+              <li class="list-group-item">
+                1. El primer paso es dirigirnos a nuestro navegador para ingresar al sitio oficial de Amanzon AWS. Daremos clic en el botón "Cree una cuenta AWS" ubicado en la esquina superior derecha e iniciará el proceso para nuestro registro.
+
+                <div class="imgn">
+                  <br>
+                  <img src="img1/1.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                2. Una vez ya dado en crear una cuenta, nos arrojara un formulario de registro donde nos pedirá nuestro datos, un correo y un nombre para nuestra cuenta.
+
+                <div class="imgn">
+                  <br>
+                  <img src="img1/2.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                3. Ya dado nuestro correo y nombre de cuenta, nos mandaran al corrreo y un código para introducir para la confirmacion de la cuenta.
+
+                <div class="imgn">
+                  <br>
+                  <img src="img1/3.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                4. Ahora ya confirmado nos pedira crear una contraseña para nuestra cuenta de Amazon AWS.
+
+                <div class="imgn">
+                  <br>
+                  <img src="img1/4.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                5. A continuación nos pedira informacion del usuario (Nombre, Numero de telefono, pais, etc) y de como tendra de previsto usar la cuenta, si es empresarial o personal.
+
+                <div class="imgn">
+                  <br>
+                  <img src="img1/5.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                6. Para continuar con el registro en Amazon AWS nos pedira un numero de cuenta bancaria.
+                <div class="imgn">
+                  <br>
+                  <img src="img1/6.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                7. Nos pedira que ingresemos nuestro numero de telefono para confrima nuestra identidad ingresando un numero telefonico donde nos enviara un codigo mediante un mensaje de voz y SMS.
+
+                <div class="imgn">
+                  <br>
+                  <img src="img1/7.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+
+    <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <strong>Parte 2: Creación de una instancia</strong>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                <ol class="list-group list-group-flush">
+
+              <li class="list-group-item">
+                1. Para crear una instancia en AWS buscaremos y seleccionaremos EC2 , encontraremos una barra de herramientas de lado izquierdo. Buscaremos la opcion de Estancia para luego seleccionarla, se meustra el deshboard de las estancias que se tiene. De anterior pantalla seleccionaremos la opcion de Lanzar instancias para abrir el asistente de instalación/creación de las instancias que se requieren.
+                <div class="imgn">
+                  <br>
+                  <img src="img2/8.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+                            <li class="list-group-item">
+                2. El primer paso es darle in nombrea a la instancia.
+                <div class="imgn">
+                  <br>
+                  <img src="img2/9.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+                            <li class="list-group-item">
+                3. Para elegir la imagen del sistema operativo, daremos clic en buscar más AMI y buscaremos la imagen de Amazon Linux 2 Kernel 5.10 tal y como se muestra en la siguiente imagen.
+                <div class="imgn">
+                  <br>
+                  <img src="img2/10.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+                            <li class="list-group-item">
+                4. Para el par de llaves elegiremos la opción de Crear un nuevo par de llaves, este es un archivo que se creará el cual servirá para el acceso de forma segura a la instancia. Ya elegido el nombre de la llave, se crea la llave que más adelante se utilizará.
+                <div class="imgn">
+                  <br>
+                  <img src="img2/11.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+                            <li class="list-group-item">
+                5. Para configurar la red se creara un grupo de seguridad que permitirá el trafico de SSH, esto es muy importante ya que se utilizará el Cliente SSH.
+                <div class="imgn">
+                  <br>
+                  <img src="img2/12.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+                            <li class="list-group-item">
+                6. Para la configuración del almacenamiento se dejará el volumen raíz intacto seguido de esto se agrega un nuevo volumen de 16 Gb y se deja el tipo de gp3
+                <div class="imgn">
+                  <br>
+                  <img src="img2/13.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+                            <li class="list-group-item">
+                7. Después de haber configurado los pasos para crear la instancia, le daremos clic en la opción de Lanzar instancia.
+                <div class="imgn">
+                  <br>
+                  <img src="img2/14.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+
+               </ol>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <strong>Parte 3: Configuración de grupos de seguridad</strong>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+
+                 <ol class="list-group list-group-flush">
+
+              <li class="list-group-item">
+                1. Para configurar los grupos de seguridad seleccionaremos el apartado de las instancias/Grupos de seguridad y se editaran para colocar nuevas reglas de entrada.
+                <div class="imgn">
+                  <br>
+                  <img src="img3/15.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                2. Ya estando en la ventana de las reglas de entrada colocaremos los tipos de HTTP y TCP personalizado con su origen de cualquier IPv4. Ya agregado las reglas le daremos guardar reglas, estas se agregaran a nuestra instancia
+                <div class="imgn">
+                  <br>
+                  <img src="img3/16.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+
+               </ol>
+                
+              </div>
+            </div>
+          </div>
+
+           <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <strong>Parte 4: Asignación de IP elástica</strong>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+
+                 <ol class="list-group list-group-flush">
+
+              <li class="list-group-item">
+                1. ara la creación y asignación de una dirección IP elástica nos iremos a la sección de Seguridad y red, dentro de la sección buscaremos Direcciones IP elásticas donde le daremos clic y nos aparecerá la siguiente pantalla. Seleccionaremos Asignar la dirección IP elástica.
+                <div class="imgn">
+                  <br>
+                  <img src="img4/17.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                2. En la pantalla siguiente elegiremos el grupo fronterizo el cual en nuestro caso, lo dejaremos por default, para luego seleccionar asignar.En grupos de direcciones IPv4 publicas, se dejará la primer opción ya que esta ayuda en si requerimos que una dirección de IPv4 se asigne desde un grupo de direcciones IP de Amazon. Ya creada la IP elástica, procederemos a asociarla para nuestra instancia
+                <div class="imgn">
+                  <br>
+                  <img src="img4/18.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                3. Ya elegida la opción antes mencionada nos redirigirá a la pantalla para asociar la IP Elástica a la instancia que se creo anteriormente.Quedando de la siguiente manera tenemos lo siguiente:
+                <ul>
+                <li>Tipo de recurso: en nuestro caso asociaremos la IP elástica para una instancia.</li>
+                <li>Instancia: aquí colocaremos nuestra instancia que creamos o queremos asociar.</li>
+                <li>Dirección IP privada: aquí colocaremos nuestra dirección IP que tenemos, en este caso se desliza la opción y es la primera que aparecerá.</li>
+                </ul>
+
+                <div class="imgn">
+                  <br>
+                  <img src="img4/19.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                4. Ya obtenido los datos que nos piden le daremos clic en la opción de Asociar
+                <div class="imgn">
+                  <br>
+                  <img src="img4/20.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+
+               </ol>
+                
+              </div>
+            </div>
+          </div>
+
+           <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <strong>Parte 5: Conexión remota</strong>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+
+                 <ol class="list-group list-group-flush">
+
+              <li class="list-group-item">
+                1. Para conectarnos a nuestra instancia mediante el cliente SSH, utilizaremos la terminal de CMD de nuestro equipo y la ejecutaremos desde la carpeta en donde tenemos la llave que generamos anteriormente (key.pem)
+                <div class="imgn">
+                  <br>
+                  <img src="img5/21.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                2. Para utilizar nuestra llave utilizaremos el siguiente comando en el cmd: ssh -i "key.pem" ec2-user@ec2-34-201-242-163.compute-1.amazonaws.com. Ya ejecutado el comando nos aparecerá la siguiente información.
+                <div class="imgn">
+                  <br>
+                  <img src="img5/22.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+
+               </ol>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <strong>Parte 6: Despliegue del sitio web</strong>
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                 <ol class="list-group list-group-flush">
+
+              <li class="list-group-item">
+                1. Ejecutaremos el siguiente comando actualiza los paquetes de Linux. sudo yum update. El siguiente comando instalara git, es un sistema de control de versiones distribuido, lo que significa que un clon local del proyecto es un repositorio de control de versiones completo. sudo yum install git
+                <div class="imgn">
+                  <br>
+                  <img src="img6/23.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                2. Para el siguiente comando es necesario crear un repositorio, en el tendremos todos los archivos para la página. En nuestro caso lo creamos y le colocamos de nombre serveraws
+                <div class="imgn">
+                  <br>
+                  <img src="img6/24.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                3. Este comando se utiliza para fijar como objetivo un repositorio existente con el fin de clonarlo ocopiarlo. git clone *enlace* Para luego ejecutar el comando completo en cmd.
+                <div class="imgn">
+                  <br>
+                  <img src="img6/25.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                4. Se instala y actualiza el NVM, este es un script bash utilizado para administrar múltiples versiones lanzadas de Node .js Una de sus características es que permite realizar operaciones como instalar, desinstalar, cambiar de versión, etc. Para obtener el siguiente comando nos iremos a la pagina de Github para luego seleccionar Instalación y actualización. https://github.com/nvm-sh/nvm#installing-and-updating
+                <div class="imgn">
+                  <br>
+                  <img src="img6/26.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                5. El comando que utilizaremos será el primero que es curl                         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+                <div class="imgn">
+                  <br>
+                  <img src="img6/27.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                6. Instalaremos el NVM node, los comandos a ejecutar son los siguientes:
+Este comando es para refrescar los comandos antes ejecutados para actualizar cualquier cambio que se realice.
+source ~/.bashrc
+                <div class="imgn">
+                  <br>
+                  <img src="img6/28.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                7. Este comando es para instalar el nvm. Nos aparece que se instalo la versión 20.3.0
+nvm install node
+                <div class="imgn">
+                  <br>
+                  <img src="img6/29.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                8. Ejecutaremos el siguiente comando para instalar la versión 16 del node
+nvm install 16
+                <div class="imgn">
+                  <br>
+                  <img src="img6/30.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                9. Para terminar y correr nuestra instancia ejecutaremos el siguiente comando: node *carpeta*/server.js
+                <div class="imgn">
+                  <br>
+                  <img src="img6/31.jpeg" width="80%">
+                </div>
+                  <br>
+              </li>
+              <li class="list-group-item">
+                10. Ya terminada las configuraciones de la conexión remota obtendremos la URL de la dirección IPv4 del DNS para abrir nuestra página.
+                <div class="imgn">
+                  <br>
+                  <img src="img6/32.jpg" width="80%">
+                </div>
+                  <br>
+              </li>
+
+               </ol>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      </body>
+      </html>
